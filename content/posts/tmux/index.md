@@ -1,7 +1,7 @@
 ---
 title: "Uma introdução ao tmux"
 date: "2020-03-03"
-draft: true
+draft: false
 
 tags: ["tmux","linux","produtividade","terminal"]
 categories: ["guias"]

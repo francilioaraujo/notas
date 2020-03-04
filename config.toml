@@ -6,7 +6,6 @@ theme = "hugo-kiera"
 paginate = 5
 summaryLength = 50
 enableEmoji = true
-buildDrafts = true
 pygmentsCodeFences = true
 DefaultContentLanguage = "pt"
 
