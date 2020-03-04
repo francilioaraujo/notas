@@ -1,0 +1,44 @@
+title = "Francílio Araújo"
+copyright = "Copyright &copy; 2019 - Francílio Araújo"
+
+theme = "hugo-kiera"
+
+paginate = 5
+summaryLength = 50
+enableEmoji = true
+buildDrafts = true
+pygmentsCodeFences = true
+DefaultContentLanguage = "pt"
+
+disqusShortName = "faraujo"
+
+[author]
+    name = "Francílio"
+    github = "francilioaraujo"
+    twitter = "francilioaraujo"
+    #facebook = ""
+    #behance = ""
+    #email = "mailto://francilioaraujo@gmail.com"
+
+[params]
+    # will use AuthorName if you leave it blank, but you can set it to arbitrary text
+    author = "Francílio Araújo"
+    # change it to false if you don't need syntax highlighting, and save a little bandwidth
+    isHighlightCode = true
+    # set true need to use custom js
+    useCustomSyntaxHighlight = false
+    customJs = []
+    customCss = []
+
+
+[[menu.main]]
+  identifier = "tags"
+  name = "Tags"
+  url = "/tags"
+  weight = 1
+
+[[menu.main]]
+  identifier = "categories"
+  name = "Categorias"
+  url = "/categories"
+  weight = 1
