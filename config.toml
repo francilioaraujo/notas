@@ -10,6 +10,7 @@ pygmentsCodeFences = true
 DefaultContentLanguage = "pt"
 
 disqusShortName = "faraujo"
+googleAnalytics = "UA-159734779-1"
 
 [author]
     name = "Francílio"
