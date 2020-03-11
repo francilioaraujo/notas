@@ -91,7 +91,7 @@ O Elastic Beanstalk cuida da configuração da infraestrutura e a deixa pronta p
 
 O ECS configura todo o ambiente para que você possa executar contêineres na AWS. Você pode executar em instâncias EC2 ou usando o [Fargate](https://aws.amazon.com/fargate/). Caso você execute em instâncias EC2 o ECS facilita toda a configuração e escalonamento. O recurso que controla o ciclo de vida do contêiner chama-se [Task](https://docs.aws.amazon.com/pt_br/AmazonECS/latest/developerguide/task_definitions.html) e o recurso que expõe os contêineres para a rede, escala o número e inicia e mantém contêineres saudáveis executando chama-se [Service](https://docs.aws.amazon.com/pt_br/AmazonECS/latest/developerguide/ecs_services.html). A Task pode ser definida em um arquivo JSON.
 
-### [ECS (Elastic Container Registry)](https://aws.amazon.com/pt/ecr/)
+### [ECR (Elastic Container Registry)](https://aws.amazon.com/pt/ecr/)
 
 **Poderia chamar-se:** Elastic Container Registry
 
