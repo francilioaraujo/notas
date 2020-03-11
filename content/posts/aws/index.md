@@ -1,7 +1,6 @@
 ---
 title: "AWS em português"
 date: "2020-03-10"
-draft: true
 
 tags: ["cloud platform", "aws"]
 categories: ["misc"]
