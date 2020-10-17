@@ -1,7 +1,6 @@
 ---
 title: "SQL, NoSQL e 7 tipos de bancos de dados que você deve conhecer"
 date: 2020-10-16
-draft: yes
 ---
 
 Todo desenvolvedor ou aspirante a desenvolvedor já ouviu falar de SQL (pode ser pronunciado como siquél) e caso você já tenha ouvido, são grandes as chances de já ter ouvido o termo NoSQL (no siquél) também.
@@ -26,7 +25,7 @@ Por abranger um número grande de tecnologias diferentes, geralmente é necessá
 
 ### Banco Relacional
 
-Geralmente é dito que bancos relacionais são bancos que permitem relacionar dados de diferentes tabelas, como [aqui](https://aws.amazon.com/pt/relational-database/) e [aqui](https://www.treinaweb.com.br/blog/os-principais-sgbds-relacionais/), mas isto não é a realidade. Banco de dados relacionais são assim chamados por serem baseados no modelo relacional de Codd. O modelo de Codd é um modelo matemático.
+Geralmente é dito que bancos relacionais são bancos que permitem relacionar dados de diferentes tabelas, como [aqui](https://aws.amazon.com/pt/relational-database/) e [aqui](https://www.treinaweb.com.br/blog/os-principais-sgbds-relacionais/), mas isto não é a realidade. Bancos de dados relacionais são assim chamados por serem baseados no modelo relacional de Codd, que é um modelo matemático.
 
 Em matemática uma relação é uma tabela em que cada coluna representa um conjunto de dados, por exemplo a tabela:
 
@@ -39,7 +38,7 @@ Em matemática uma relação é uma tabela em que cada coluna representa um conj
 
 é uma relação (matematicamente falando) em que a primeira coluna é um conjunto de nomes, a segunda coluna é um conjunto de números, a terceira um conjunto de cores e a quarta um conjunto de animais. Em um banco de dados podemos guardar esta relação em uma tabela (mas em um caso real as linhas fariam algum sentido).
 
-Como tabelas são interpretadas como relações, as consultas SQL (DQL em particular) é interpretada pelo banco como operações sobre estas relações, como criar novas relações a partir de duas relações já existentes (JOIN), retornar apenas alguns conjuntos da relação (SELECT nome, cor FROM) ou subconjuntos dos conjuntos da relação (WHERE).
+Como tabelas são interpretadas como relações, as consultas SQL (DQL em particular) são interpretadas pelo banco como operações sobre estas relações, como criar novas relações a partir de duas relações já existentes (JOIN), retornar apenas alguns conjuntos da relação (SELECT nome, cor FROM) ou subconjuntos dos conjuntos da relação (WHERE).
 
 Bancos de dados relacionais necessitam que seja definido um esquema para os dados. Esquema nada mais é do que a forma dos dados, por exemplo, ao definir uma tabela `clientes` é necessário definir quais colunas há nesta tabela. Esta definição da forma dos dados é feito utilizando a sub-linguagem DDL do SQL.
 
@@ -113,8 +112,16 @@ Exemplos conhecidos de SGBD de séries temporais são [InfluxDB](https://www.inf
 
 ### Bancos multi-modelo
 
-Todos estes tipos de banco NoSQL surgiram pela necessidade de armazenamento e busca de dados de forma mais especializada, em contraste com os bancos relacionais que buscam atender esta área de forma mais abrangente. Mas a dificuldade de manter várias soluções diferentes para tratar dados diferentes fez com que vários bancos passassem a permitir novas abordagens.
+Todos estes tipos de banco NoSQL surgiram pela necessidade de armazenamento e busca de dados de forma mais especializada, em contraste com os bancos relacionais que buscam atender esta área de forma mais abrangente. Mas a dificuldade de manter várias soluções diferentes para tratar dados diferentes com linguagem potencialmente diferentes fez com que vários bancos passassem a permitir novas abordagens.
 
 No [ranking de popularidade](https://db-engines.com/en/ranking) do site DB-Engines, 8 entre os 10 bancos mais populares são relatados como multi-modelo, ou seja, permitem múltiplas abordagens para armazenar, modificar e consultar dados. Apesar de serem multi-modelo, estes bancos implementam os outros modelos como extensão de seu modelo principal, como o Oracle que é um banco relacional, mas pode armazenar documentos e dados em formato de grafo como extensão do seu modelo relacional.
 
 Há bancos que já foram desenvolvidos para ser multi-modelo, como o AWS DynamoDB e o Microsoft Azure Cosmos DB.
+
+### Considerações finais
+
+Bancos relacionais ainda podem atender as necessidades das mais diversas aplicações. Bancos NoSQL não vieram para substituir, mas sim para agregar. Conhecer as características destes bancos pode facilitar a forma com que os dados são trabalhados pela sua aplicação e escolher a ferramenta certa pode economizar custo de desenvolvimento e de operacionalização.
+
+O site [DB-Engines](https://db-engines.com/en/) é uma boa fonte de informações sobre o panorama dos SGBDs. Algumas informações sobre bancos NoSQL podem ser obtidas no site da [Hosting data](https://hostingdata.co.uk/nosql-database/). Se deseja ter uma experiência básica de utilização de sete bancos diferentes, aconselho a leitura do livro *Seven Databases in Seven Weeks: A Guide to Modern Databases and the NoSQL Movement* da editora O'Reilly.
+
+![Seven databases in seven weeks](https://images-na.ssl-images-amazon.com/images/I/518gwCxhOkL._SX415_BO1,204,203,200_.jpg)
