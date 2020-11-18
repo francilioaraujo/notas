@@ -1,6 +1,14 @@
 ---
 title: Do que contêineres docker são feitos?
 date: 2020-10-22
+
+tags:
+- containers
+- docker
+- podman
+
+categories:
+- guias
 ---
 
 Docker é uma tecnologia que permite realizar o deploy de um software com o ambiente em que ele será executado em uma unidade padronizada. Esta tecnologia evita que ocorram problemas de "na minha máquina funciona", pois o ambiente em que o software está sendo executado é o mesmo, tanto em desenvolvimento, quanto em produção. Esta possibilidade trouxe mais confiança para os deploys.

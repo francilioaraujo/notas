@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/faraujo
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://faraujo.netlify.app
+  * I am faraujo (https://keybase.io/faraujo) on keybase.
+  * I have a public key ASBPLs_Bt-BAbtlR5YFysltNF6Oud9d_DGRY2WbGfhcdTQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01204f2ecfc1b7e0406ed951e58172b25b4d17a3ae77d77f0c6458d966c67e171d4d0a",
+      "host": "keybase.io",
+      "kid": "01204f2ecfc1b7e0406ed951e58172b25b4d17a3ae77d77f0c6458d966c67e171d4d0a",
+      "uid": "ca08b56aabc5a1c7ce49ae122366e119",
+      "username": "faraujo"
+    },
+    "merkle_root": {
+      "ctime": 1605673531,
+      "hash": "1edf65da0ea06ad82aa41451d7ddbc924799e81657f6e2a207e93c9c2b05bdfe64f27e6682b6e722258fc04afb4cd5b66c489cff08da464b4f1ed9c1b5b28ea1",
+      "hash_meta": "0886687af651b70497040083b50aec05f31bd39e8eb3241465b642ffc05b5a0f",
+      "seqno": 18155362
+    },
+    "service": {
+      "entropy": "53auarM0YuoqGY/O+tlUP1ie",
+      "hostname": "faraujo.netlify.app",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.2"
+  },
+  "ctime": 1605673547,
+  "expire_in": 504576000,
+  "prev": "cb02dc5fc459608c41d8fd9d151f6e1b0a0dee464651aa71dc00c281ecb333eb",
+  "seqno": 24,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgTy7PwbfgQG7ZUeWBcrJbTRejrnfXfwxkWNlmxn4XHU0Kp3BheWxvYWTESpcCGMQgywLcX8RZYIxB2P2dFR9uGwoN7kZGUapx3ADCgeyzM+vEIBCngE/aAcNksfL2r/ud1njjqu0AtA30RX/DGzF439Y3AgHCo3NpZ8RAelEEwRcOxzh+f3ZKMv5FAdjsbRqvgSM8ZKkvRt7mdkGrppkXsdBD9kvR0+JVc4sHxo55KLsn4zpoc8rTRQZZAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIO8ZCTq7Oi148OHOLDOU1kAAXZbAW6+s7O01buqk1ViNo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/faraujo
+
+==================================================================

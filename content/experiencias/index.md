@@ -10,16 +10,16 @@ Tenho interesses em várias áreas da tecnologia. Meus interesses primários sã
 
 KodeKloud Engineer (KKE) é uma plataforma da empresa [KodeKloud](https://kodekloud.com/) que visa dar experiências práticas na área de DevOps. A plataforma é dividida em três níveis: Administrador de Sistemas, Engenheiro DevOps e Arquiteto DevOps. Atualmente estou no nível Engenheiro DevOps em espera da liberação do nível de Arquiteto.
 
-Segue um resumo das atividades que executei na plataforma (atualizado em 14/10/2020):
+Segue um resumo das atividades que executei na plataforma (atualizado em 10/11/2020):
 
 | Área | Total de Atividades | Únicas |
 |------|---------------------|--------|
-| SysAdmin | 80 | 38 |
-| Git | 10 | 9 |
-| Ansible | 23 | 19 |
-| Puppet | 21 | 18 |
-| Docker | 21 | 15 |
-| Kubernetes | 34 | 29 |
+| SysAdmin | 81 | 39 |
+| Git | 13 | 12 |
+| Ansible | 25 | 19 |
+| Puppet | 22 | 18 |
+| Docker | 23 | 15 |
+| Kubernetes | 48 | 37 |
 
 Detalhes podem ser vistos [neste link](https://www.kodekloud-engineer.com/#!/user_profile?uid=32343921).
 

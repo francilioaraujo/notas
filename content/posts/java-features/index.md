@@ -1,10 +1,18 @@
 ---
 title: "Java Features através do tempo"
 date: 2020-10-07
+
+tags:
+- java
+- JVM
+- OpenJDK
+
+categories:
+- guias
 ---
 Em 2014 foi lançada a versão 8 da plataforma Java SE (sim, há 6 anos!) e trouxe consigo diversas funcionalidades muito esperadas como as expressões lambda. A partir da versao 9 cada nova versão é lançada a cada 6 meses (Atualmente estamos na versão 15). Este novo ritmo de atualizações faz com que programadores tenham mais dificuldades em descobrir novas possibilidades da linguagem. Neste texto compilarei algumas das adições, remoções e modificações que possam impactar diretamente na nossa rotina de desenvolvimento.
 
-Estas informações podem ser consultadas em mais detalhes na página da [OpenJDK](https://openjdk.java.net/). Este texto deve servir apenas como referência rápida e encoraja a consulta à página da OpenJDK. Os exemplos de código podem ser das próprias JEPs ou JSRs por facilidade.
+Estas informações podem ser consultadas em mais detalhes na página da [OpenJDK](https://openjdk.java.net/) ou no [Java Version Almanac](https://foojay.io/almanac/jdk-8/) da Foojay. Este texto deve servir apenas como referência rápida e encoraja a consulta à página da OpenJDK. Os exemplos de código podem ser das próprias JEPs ou JSRs por facilidade.
 
 - [J2SE 5.0](#java5)
 - [Java SE 6](#java6)

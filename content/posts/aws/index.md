@@ -1,9 +1,13 @@
 ---
-title: "AWS em português"
-date: "2020-03-10"
+title: AWS em português
+date: 2020-03-10
 
-tags: ["cloud platform", "aws"]
-categories: ["misc"]
+tags:
+- cloud platforms
+- aws
+
+categories:
+- guias
 ---
 [Amazon Web Services](https://aws.amazon.com/pt/) (AWS) é o nome do provedor de computação em nuvem mais utilizado no mundo, de acordo com o seguinte infográfico:
 

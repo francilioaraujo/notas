@@ -1,10 +1,15 @@
 ---
 title: "Uma introdução ao tmux"
 date: "2020-03-03"
-draft: false
 
-tags: ["tmux","linux","produtividade","terminal"]
-categories: ["guias"]
+tags:
+- "tmux"
+- "linux"
+- "produtividade"
+- "terminal"
+
+categories:
+- tutoriais
 ---
 
 [Tmux](https://github.com/tmux/tmux) é um programa de terminal que permite exibir e executar vários programas de terminal de forma simultânea e gerenciar sessões, permitindo usos avançados do terminal.

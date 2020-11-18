@@ -1,6 +1,14 @@
 ---
-title: "SQL, NoSQL e 7 tipos de bancos de dados que você deve conhecer"
+title: SQL, NoSQL e 7 tipos de bancos de dados que você deve conhecer
 date: 2020-10-16
+
+tags:
+- bancos de dados
+- SQL
+- NoSQL
+
+categories:
+- guias
 ---
 
 Todo desenvolvedor ou aspirante a desenvolvedor já ouviu falar de SQL (pode ser pronunciado como siquél) e caso você já tenha ouvido, são grandes as chances de já ter ouvido o termo NoSQL (no siquél) também.
