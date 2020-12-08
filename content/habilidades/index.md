@@ -1,7 +1,7 @@
 ---
 menu: "main"
 meta: "false"
-title: "Experiências"
+title: "Habilidades"
 ---
 
 Tenho interesses em várias áreas da tecnologia. Meus interesses primários são Java, Spring, Python, Linux, AWS, GCP, Docker, Kubernetes, PostgreSQL, Elastic Stack e MongoDB. Meus interesses secundários são Ansible, Puppet, Chef InSpec, Jenkins, Terraform, Packer e Go.
@@ -44,3 +44,9 @@ Alura é uma plataforma de cursos por assinatura. Finalizei (até a data de 22/0
 - [MongoDB for SQL Pros](http://university.mongodb.com/course_completion/321c2995-38aa-4b43-99ef-d1790356333d)
 - [Basic Cluster Administration](http://university.mongodb.com/course_completion/235f74fa-f97e-48d3-88ac-0d02892bdf31)
 - [The MongoDB Aggretation Framework](http://university.mongodb.com/course_completion/62643230-4edf-4a22-b862-267190127d19)
+
+## Redis University
+
+É uma série de treinamentos da empresa [RedisLabs](https://redislabs.com/) sobre o Redis. Completei os treinamentos seguintes:
+
+- [Introduction to Redis Data Structures](https://university.redislabs.com/certificates/564e81bb4aa44b749d27d761d6210135)
