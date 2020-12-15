@@ -44,6 +44,7 @@ Alura é uma plataforma de cursos por assinatura. Finalizei (até a data de 22/0
 - [MongoDB for SQL Pros](http://university.mongodb.com/course_completion/321c2995-38aa-4b43-99ef-d1790356333d)
 - [Basic Cluster Administration](http://university.mongodb.com/course_completion/235f74fa-f97e-48d3-88ac-0d02892bdf31)
 - [The MongoDB Aggretation Framework](http://university.mongodb.com/course_completion/62643230-4edf-4a22-b862-267190127d19)
+- [MongoDB Performance](https://university.mongodb.com/course_completion/8c762680-5f14-4458-aca4-400236515921)
 
 ## Redis University
 
