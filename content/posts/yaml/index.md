@@ -1,7 +1,6 @@
 ---
 title: "YAML como língua estrangeira"
 date: "2021-03-23"
-draft: Yes
 
 tags:
 - "yaml"
