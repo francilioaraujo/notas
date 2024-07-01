@@ -28,6 +28,8 @@ https://www.redhat.com/pt-br/topics/devops
 
 https://www.atlassian.com/br/devops
 
+https://www.thoughtworks.com/en-in/insights/blog/getting-devops
+
  -->
 
 DevOps tem sido um termo muito popular no mundo de tecnologia nos últimos anos. O gráfico abaixo mostra a evolução do número de pesquisas sobre DevOps no google desde 01 de Janeiro de 2022:
@@ -56,7 +58,7 @@ Além dessa palestra e livros, aconselho também a leitura do livro _Site Reliab
 
 ## DevOps é cargo?
 
-A resposta sucinta é não. É bem fácil encontrar cargos com o título "engenheiro devops" e "analista devops", e até cargos como "SRE", "platform engineer" e "cloud engineer" com responsabilidades similares. Essas responsabilidades compartilhadas fazem parte dos processos (e ferramentas) de DevOps. Isso mostra que não há um cargo DevOps, mas cargos que utilizam práticas DevOps.
+A resposta sucinta é não. É bem fácil encontrar cargos com o título "engenheiro devops" e "analista devops", e até cargos como "SRE", "platform engineer" e "cloud engineer" com responsabilidades similares. Essas responsabilidades compartilhadas fazem parte dos processos (e ferramentas) de DevOps. Isso mostra que não há um cargo de DevOps, mas cargos que utilizam práticas DevOps.
 
 ## O que devo estudar para iniciar em um cargo DevOps?
 
@@ -174,4 +176,4 @@ O importante de saber nesse tópico é como coletar esses dados, armazenar, cons
 
 ## E segurança?
 
-Assim como ocorre a colaboração dos times de Dev e Ops também podemos colaborar com o time de Sec. No lugar de avaliar a segurança das aplicações e ambientes
+Assim como ocorre a colaboração dos times de Dev e Ops também podemos colaborar com o time de Sec. No lugar de avaliar a segurança das aplicações e ambientes depois do deploy, e de forma manual, podemos deslocar a segurança para a esquerda e realizar as avaliações por todo o ciclo de entrega de software desde o desenvolvimento. Isso significa utilizar ferramentas que possam avaliar características de segurança de forma automatizada e modelar os riscos de segurança advindos de mudanças no software. Isso não significa remover completamente as avaliações manuais realizadas pelo time de segurança. A este movimento dá-se o nome de DevSecOps.
