@@ -30,6 +30,8 @@ https://www.atlassian.com/br/devops
 
 https://www.thoughtworks.com/en-in/insights/blog/getting-devops
 
+https://services.google.com/fh/files/misc/2023_final_report_sodr.pdf
+
  -->
 
 DevOps tem sido um termo muito popular no mundo de tecnologia nos últimos anos. O gráfico abaixo mostra a evolução do número de pesquisas sobre DevOps no google desde 01 de Janeiro de 2022:
@@ -95,12 +97,12 @@ Muito provavelmente você estará trabalhando com um software que é acessado pe
 
 * IP, porta e socket
 * Máscara de rede e notação CIDR
-* Rotas
+* Rotas e NAT
 * Modelo OSI e TCP/IP
 
 Entre os protocolos, busque sobre:
 
-* IP e DNS
+* DHCP, IP e DNS
 * TCP e UDP
 * FTP e NFS
 * SSH
