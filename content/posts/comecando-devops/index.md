@@ -32,25 +32,31 @@ https://www.thoughtworks.com/en-in/insights/blog/getting-devops
 
 https://services.google.com/fh/files/misc/2023_final_report_sodr.pdf
 
+https://newrelic.com/blog/nerd-life/devops-name
+
  -->
 
 DevOps tem sido um termo muito popular no mundo de tecnologia nos últimos anos. O gráfico abaixo mostra a evolução do número de pesquisas sobre DevOps no google desde 01 de Janeiro de 2022:
 
 {{< html >}}
-<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3769_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"/m/0c3tq11","geo":"","time":"2022-01-01 2024-06-30"}],"category":0,"property":""}, {"exploreQuery":"date=2022-01-01%202024-06-30&q=%2Fm%2F0c3tq11&hl=pt","guestPath":"https://trends.google.com.br:443/trends/embed/"}); </script>
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3769_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"/m/0c3tq11","geo":"","time":"2022-01-01 2024-06-30"}],"category":0,"property":""}, {"exploreQuery":"date=2022-01-01%20now&q=%2Fm%2F0c3tq11&hl=pt","guestPath":"https://trends.google.com.br:443/trends/embed/"}); </script>
 {{< /html >}}
 
 No grupo do telegram _Novo DevOps BR_ (uma comunidade voltada a tirar dúvidas e discutir sobre DevOps) frequentemente há dúvidas sobre como iniciar na área. Há diversos materiais na internet sobre como iniciar, variando de abordagem e ponto de vista, como [este artigo](https://gomex.me/blog/primeiros_passos_devops/), [esta trilha](https://roadmap.sh/devops?r=devops-beginner) e [esta outra trilha](https://trilha.info/roadmap/devops). Neste texto quero acrescentar o meu ponto de vista sobre como planejar os estudos para iniciar na área.
 
 ## O que é DevOps e de onde surgiu?
 
-DevOps é um movimento baseado em uma cultura, processos e ferramentas. Devops não surgiu de um momento para o outro. Por volta de 2007 já eram discutidas ideias sobre como melhorar o processo de entrega de software. É argumentado que a primeira palestra sobre DevOps (ainda não havia o termo) foi feita no evento Velocity de 2009 com o título _10+ Deploys per day: Dev and Ops Cooperation at Flickr_ (10+ deploys por dia: cooperação entre dev e ops na Flickr), por John Allspaw e Paul Hammond. 
+DevOps é um movimento baseado em cultura, processos e ferramentas. Devops não surgiu de um momento para o outro. Por volta de 2007 já eram discutidas ideias sobre como melhorar o processo de entrega de software. Em 2008 Patrick Debois realiza uma palestra intitulada _Agile Infrasctructure & Operations_ (Infraestrutura e Operações ágeis, em tradução minha. Slides disponíveis [aqui](https://www.jedi.be/presentations/agile-infrastructure-agile-2008.pdf)), que discute como incluir o time de operações no ciclo ágil. Em Agosto do mesmo ano, Andrew Shafer publica uma sessão de discussão informal chamada _Agile Infrastructure_ (Infraestrutura ágil), mas só Patrick comparece (nem Andrew comparece). Patrick busca Andrew para conversar sobre o tema e baseado na conversa eles criam o grupo de administradores ágeis de sistemas. Um ano depois, em 2009, é apresentada uma palestra muito importante para o movimento DevOps (mas ainda não utilizava este termo), feita no evento Velocity de 2009 com o título _10+ Deploys per day: Dev and Ops Cooperation at Flickr_ (10+ deploys por dia: cooperação entre dev e ops na Flickr), por John Allspaw e Paul Hammond. 
 
 {{< youtube LdOe18KhtT4 >}}
 
-No mesmo ano, Patrick Debois organizou o primeiro [DevOpsDays](https://devopsdays.org/) em Ghent, na Bélgica. Cunhando assim o termo DevOps. Em 2013 foi lançado um romance chamado _The Phoenix Project_ (O Projeto Fênix), escrito por Gene Kim, Kevin Behr e George Spafford, narrando como um departamento de TI conseguiu salvar um projeto que estava atrasado e passando do orçamento, corrigindo falhas estruturais na execução do mesmo. Em 2016 é lançado o livro _The DevOps Handbook_ (O Manual de DevOps), que apresenta os tópicos apresentados no projeto fênix de forma técnica.
+No mesmo ano, Patrick Debois organizou o primeiro [DevOpsDays](https://devopsdays.org/) em Ghent, na Bélgica. Cunhando assim o termo DevOps.
+
+Em 2013 foi lançado um romance chamado _The Phoenix Project_ (O Projeto Fênix), escrito por Gene Kim, Kevin Behr e George Spafford, narrando como um departamento de TI conseguiu salvar um projeto que estava atrasado e custando mais que o orçado, corrigindo falhas estruturais na execução do mesmo.
 
 ![The phoenix project](./images/the-phoenix-project-book.jpg)
+
+Em 2016 é lançado o livro _The DevOps Handbook_ (O Manual de DevOps), que apresenta os tópicos apresentados no projeto fênix de forma técnica.
 
 ![The DevOps Handbook](./images/the-devops-handbook-book.jpg)
 
@@ -64,13 +70,13 @@ A resposta sucinta é não. É bem fácil encontrar cargos com o título "engenh
 
 ## O que devo estudar para iniciar em um cargo DevOps?
 
-Um cargo DevOps (não confundir com um cargo _de_ DevOps) herda várias (se não todas) atribuições dos sysadmins, incorporando práticas do desenvolvimento. Deste modo, é primordial que saiba:
+Um cargo DevOps (não confundir com um cargo _de_ DevOps) herda várias (se não todas) atribuições dos sysadmins, incorporando práticas do desenvolvimento. Deste modo, é primordial saber:
 
 * Linux
 * Criar scripts (bash ou python)
 * Redes
 * Construir e executar software
-* Serviços auxiliares
+* Serviços de sistema e de redes
 
 Mas, além dos citados acima, também é necessário saber:
 
@@ -81,15 +87,22 @@ Mas, além dos citados acima, também é necessário saber:
 * Infraestrutura como código
 * Monitoramento
 
-É importante notar que DevOps surgiu junto a várias novidades sobre como executar software, como a massificação do uso de cloud, a criação e popularização de contêineres docker, a publicação dos projetos kubernetes e prometheus como software livre, e essas novidades foram agregadas a DevOps.
+É importante notar que DevOps surgiu junto a várias novidades sobre como executar software, como a massificação do uso de cloud, a criação e popularização de contêineres docker e a publicação dos projetos kubernetes e prometheus como software livre, e essas novidades foram agregadas ao movimento DevOps.
 
 ### Linux
 
-Linux é um dos sistemas operacionais mais utilizados para executar software como serviço. Saber como executar e gerenciar software é uma habilidade essencial para DevOps. É necessário compreender conceitos básicos sobre sistemas operacionais, como o que são programas, como são executados e o que são processos. Servidores são gerenciados sem interface gráfica, então é necessário aprender como utilizar um terminal efetivamente, desde tarefas simples, como criar arquivos e diretórios, até tarefas mais complexas, como obter informações sobre os processos em execução e sobre o sistema.
+Linux é um dos sistemas operacionais mais utilizados para executar software como serviço. Saber como executar e gerenciar software é uma habilidade essencial para DevOps. É necessário compreender conceitos básicos sobre sistemas operacionais, como o que são programas, como são executados e o quê são processos. Servidores são gerenciados sem interface gráfica, então é necessário aprender como utilizar um terminal efetivamente, desde tarefas simples, como criar arquivos e diretórios, até tarefas mais complexas, como obter informações sobre os processos em execução e sobre o sistema.
+
+**Material de estudo**
+
+* [GuiaFoca Linux](https://guiafoca.org/)
+* [Curso GNU/Linux do Paulo Kretcheu](https://youtube.com/playlist?list=PLuf64C8sPVT9L452PqdyYCNslctvCMs_n&si=lXOnwyoDVFqfNEQ6)
+* [Curso de linux - Primeiros passos do Curso em vídeo](https://youtube.com/playlist?list=PLHz_AreHm4dlIXleu20uwPWFOSswqLYbV&si=QF40kU4iDXp3UfGj)
+* [Treinamento Linux essencial da LINUXtips](https://www.linuxtips.io/course/linux-essentials)
 
 ### Criar scripts
 
-Um dos pilares dos processos DevOps é automatizar. Logo, é bem mais aconselhado executar uma sequência de passos a partir de um script do que manualmente. Bash é um programa linux que possibilita escrever scripts e executar comandos. Ao utilizar o terminal em linux, provavelmente estará executando comandos no bash. Python também é uma boa opção para escrever scripts.
+Um dos pilares dos processos DevOps é automatizar. Logo, é bem mais aconselhado executar uma sequência de passos a partir de um script do que manualmente. Bash é um programa linux que possibilita executar scripts. Ao utilizar o terminal em linux, provavelmente estará executando comandos no bash. Python também é uma boa opção para escrever scripts.
 
 ### Redes
 
@@ -111,28 +124,28 @@ Entre os protocolos, busque sobre:
 
 ### Construir e executar software
 
-Há dois tipos de linguagens de programação, linguagens compiladas e linguagens interpretadas. As linguagens compiladas precisam passar por um processo, chamado de compilação, que transforma o código fonte em arquivos binários que possam ser executados pelo sistema operacional, ou um programa (como é o caso de linguagens para a jvm). As linguagens interpretadas são executadas diretamente por um programa. É necessário, então, saber como levar o código fonte para a execução, onde ele realizará sua função.
+Há dois tipos de linguagens de programação, linguagens compiladas e linguagens interpretadas. As linguagens compiladas precisam passar por um processo, chamado de compilação, que transforma o código fonte em arquivos binários que possam ser executados pelo sistema operacional, ou um outro programa (como é o caso de linguagens para a jvm). As linguagens interpretadas são executadas diretamente por um programa. É necessário, então, saber como levar o código fonte para a execução, onde ele realizará sua função.
 
 O processo (compilação e execução) depende da linguagem utilizada e as vezes até do framework escolhido. É necessário ter em mente que a forma de executar em produção pode ser diferente de como o código é executado durante o desenvolvimento. Por isso, vale buscar a documentação da linguagem e/ou framework para entender como executar o código em produção.
 
-### Serviços auxiliares
+### Serviços de sistema e de redes
 
 Ao executar um software próprio, provavelmente serão necessárias funcionalidades presentes em softwares fornecidos por terceiros, de forma direta ou indireta. Estes softwares de terceiros podem ser bancos de dados, sistemas de fila, proxies, caches, etc. É importante saber a função desses softwares e o quê eles trazem de funcionalidade para o seu ambiente. Por exemplo, procure saber mais sobre os termos seguintes (essa lista não é exaustiva):
 
 * Firewall
 * Load Balancer
 * Proxy reverso
-* Server de caching
+* Servidor de caching
 * Servidor web
 * Servidor de aplicação
 
 ### Git
 
-Git é utilizado para gerenciar o versionamento do código. Assim, é importante saber como interagir com um git (e um servidor git) para obter o código que será excutado (ou transformado em um executável). Com algumas práticas DevOps, é necessário produzir código (como scripts, por exemplo), então também pode ser parte do dia a dia interagir diretamente com um repositório git.
+Git é utilizado para gerenciar o versionamento do código. Assim, é importante saber como interagir com um repositório git (e um servidor git) para obter o código que será excutado (ou transformado em um executável). Com algumas práticas DevOps, é necessário produzir código (como scripts, por exemplo), então também pode ser parte do dia a dia interagir diretamente com um repositório git.
 
 ### Contêineres
 
-Contêineres docker transformaram completamente a forma de entregar software para a produção. Assim é importante saber criar e utilizar contêineres docker. Além de docker, é necessário saber que existem plataformas para executar contêineres em escala, como o kubernetes. Mesmo estando englobado no tópico de contêineres, é importante salientar que contêineres docker e kubernetes são mundos próprios e tópicos extensos por si só, mas que possuem uma conexão.
+Contêineres docker transformaram completamente a forma de entregar software para a produção. Assim é importante saber criar e utilizar contêineres docker. Além de docker, é necessário saber que existem plataformas para executar contêineres em escala, como o kubernetes. Mesmo estando englobado no tópico de contêineres, é importante salientar que contêineres docker e kubernetes são mundos próprios e tópicos extensos por si só, mas que são muito relacionados.
 
 ### CI/CD
 
@@ -140,7 +153,7 @@ Como dito anteriormente, automatizar é um dos pilares de DevOps. O processo de 
 
 ### Cloud
 
-Plataformas cloud têm se popularizado nos últimos anos e possibilitado executar software com um investimento menor e escala elástica, e permitindo que o gerenciamento da infraestrutura seja feito a partir de APIs. Muitas empresas menores foram criadas executando software em cloud e várias empresas maiores, que possuem datacenter próprio, também adotam cloud. Mesmo não adotando uma cloud, empresas também podem criar uma cloud interna para facilitar a implantação e gerenciamento do software.
+Plataformas cloud têm se popularizado nos últimos anos e possibilitado executar software com um investimento inicial menor e escala elástica e permitindo que o gerenciamento da infraestrutura seja feito a partir de APIs. Muitas empresas menores foram criadas executando software em cloud e várias empresas maiores, que possuem datacenter próprio, também adotam cloud. Mesmo não adotando uma cloud, empresas também podem criar uma cloud interna para facilitar a implantação e gerenciamento do software.
 
 Cloud pode ser um tópico muito extenso. Para iniciar, é necessário entender o seguinte:
 
@@ -172,10 +185,14 @@ Ter diversos serviços rodando requer ter visibilidade sobre os problemas que oc
 * Métricas: Números coletados do ambiente. Serve para expor características quantificáveis do ambiente, como memória consumida, espaço livre em disco, número de requisições, etc
 * Traces: Trajetória de uma requisição através de um sistema (possivelmente distribuído). Serve para descrever o que ocorre com uma requisição enquanto é processada
 
-Alguns conteúdos adicionam mais tipos de dados que podem ser coletados, como eventos e exceções.
+Alguns conteúdos (artigos e vídeos) adicionam mais tipos de dados que podem ser coletados, como eventos e exceções.
 
 O importante de saber nesse tópico é como coletar esses dados, armazenar, consultar e transformar em informações importantes sobre o ambiente.
 
 ## E segurança?
 
 Assim como ocorre a colaboração dos times de Dev e Ops também podemos colaborar com o time de Sec. No lugar de avaliar a segurança das aplicações e ambientes depois do deploy, e de forma manual, podemos deslocar a segurança para a esquerda e realizar as avaliações por todo o ciclo de entrega de software desde o desenvolvimento. Isso significa utilizar ferramentas que possam avaliar características de segurança de forma automatizada e modelar os riscos de segurança advindos de mudanças no software. Isso não significa remover completamente as avaliações manuais realizadas pelo time de segurança. A este movimento dá-se o nome de DevSecOps.
+
+## Conclusão
+
+É muito comum quem está iniciando se assustar com a quantidade de assuntos que DevOps agrega, ainda mais pela quantidade de criadores de conteúdo que publicam coisas bem distintas sobre DevOps. Este texto busca dar um direcionamento baseado na história do movimento e na minha própria experiência. Pode parecer um caminho longo e cheio de desafios, mas que caminho profissional não tem desafios?
