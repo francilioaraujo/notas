@@ -8,8 +8,6 @@ tags:
 
 categories:
 - guias
-
-draft: true
 ---
 
 [Carvel](https://carvel.dev/) é um projeto que fornece um conjunto de ferramentas para construir, configurar e implantar aplicações em kubernetes. Essas ferramentas são de propósito específico e podem ser compostas entre si (filosofia posix).
