@@ -7,8 +7,6 @@ tags:
 
 categories:
 - caderno
-
-draft: yes
 ---
 
 Uma rede de computadores serve para que dois computadores possam se comunicar entre si. Para o caso simples de conectar dois computadores, podemoms ligá-los com um cabo e desenvolver um formato de comunicação própria que permita a troca de dados entre os dois. No entanto, ao adicionar mais computadores temos de arranjar formas mais elaboradas para permitir essa troca de dados. Quando um computador inicia uma comunicação com um segundo para obter um retorno chamamo-o de cliente e ao segundo de servidor, pois o primeiro requisita algum dado e o segundo o serve.
