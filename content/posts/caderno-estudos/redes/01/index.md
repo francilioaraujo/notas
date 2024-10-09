@@ -29,7 +29,7 @@ O modelo OSI é um modelo de sete camadas, em que a função e a relação de ca
 
 ![encapsulamento](./images/encapsulamento.png)
 
-Quando esses dados para utilização do protocolo são adicionados antes dos dados, damos o nome de cabeçalho. Quando esses dados são adicionados após, damos o nome de rodapé.
+Quando esses dados para utilização do protocolo são adicionados antes dos dados, damos o nome de cabeçalho. Quando esses dados são adicionados após, damos o nome de rodapé. Aos dados resultantes da adição do cabeçalho e do rodapé (quando houver) geralmente damos o nome de pacote. No entanto, camadas específicas podem ter nomes específicos, como quadro na camada dois, pacote na camada três, segmento ou datagrama na camada quatro.
 
 ## Modelo TCP/IP
 
