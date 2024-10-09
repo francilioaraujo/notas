@@ -29,6 +29,8 @@ O modelo OSI é um modelo de sete camadas, em que a função e a relação de ca
 
 ![encapsulamento](./images/encapsulamento.png)
 
+Quando esses dados para utilização do protocolo são adicionados antes dos dados, damos o nome de cabeçalho. Quando esses dados são adicionados após, damos o nome de rodapé.
+
 ## Modelo TCP/IP
 
 Com a popularização da internet, dois protocolos em específico ganharam ampla utilização, o TCP da camada de transporte e o IP da camada de rede. Isso deu origem a um modelo mais simples, com apenas quatro camadas. Neste modelo, as camadas de aplicação, apresentação e sessão são mescladas em uma só camada, chamada de Camada de Aplicação, a camada de rede é chamada de camada internet e as camadas de Enlace de Dados e física são mescladas em uma camada chamada de camada de Enlace. Na imagem abaixo podemos ver um comparativo visual entre os modelos:
