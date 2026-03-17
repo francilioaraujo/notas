@@ -1,0 +1,8 @@
+<a href="{{ .Params.href }}">{{ replaceRE
+    "<code[^>]*>(.*?)</code>"
+    "$1"
+    (transform.Highlight
+        .Params.text
+        (.Page.Store.Get "type")
+        (merge (.Page.Store.Get "attributes") (dict "hl_inline" "true"))
+    ) | safeHTML }}</a>
