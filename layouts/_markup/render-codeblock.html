@@ -1,0 +1,4 @@
+{{ $result := transform.HighlightCodeBlock . }}
+{{ .Page.Store.Set "type" .Type }}
+{{ .Page.Store.Set "attributes" .Attributes }}
+{{ $result.Wrapped }}
