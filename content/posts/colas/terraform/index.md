@@ -1063,3 +1063,5 @@ Uso: `terraform stacks configuration <subcomando>`
 Incompatibilidades:
 
 * Meta-argumento `enabled`
+
+- [Can I TF](https://cani.tf/): Mostra funcionalidades do Terraform e OpenTofu e em qual versão estão disponíveis
