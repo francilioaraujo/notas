@@ -31,7 +31,7 @@ Resumo:
 * Terraform utiliza HCL como linguagem
 * HCL é uma linguagem de configuração construída por dois conceitos principais:
 
-```hcl
+```terraform
 # Atributos
 attribute = "value"
 
@@ -43,7 +43,7 @@ type ["value" ...] {
 
 * Valores de atributos também podem ser expressões
 
-```hcl
+```terraform
 # Operações entre valores
 soma = 1 + valor
 
@@ -58,7 +58,7 @@ mensagem_gritando = upper(mensagem)
 
 Referência: [terraform (en)](https://developer.hashicorp.com/terraform/language/block/terraform)
 
-```hcl
+```terraform
 terraform {
     # Declara a versão requerida do terraform
     required_version = "..."
@@ -84,7 +84,7 @@ Referência sobre backend: [backend (en)](https://developer.hashicorp.com/terraf
 
 Referência: [Provedores (en)](https://developer.hashicorp.com/terraform/language/providers)
 
-```hcl
+```terraform
 terraform {
     # Define a versão do provedor
     required_providers {
@@ -103,7 +103,7 @@ provider "<nome>" {
 
 **Configuração múltipla de um provedor**
 
-```hcl
+```terraform
 provider "aws" {
     region = "us-east-1"
 }
@@ -126,7 +126,7 @@ resource "aws_instance" "foo" {
 
 Declarando o módulo:
 
-```hcl
+```terraform
 terraform {
     required_providers {
         aws = {
@@ -146,7 +146,7 @@ data "aws_ami" "amazon_linux" {
 
 Ao utilizar o módulo:
 
-```hcl
+```terraform
 provider "aws" {
     alias  = "west"
     region = "us-west-2"
@@ -165,7 +165,7 @@ module "web-server" {
 
 Referência: [recursos (en)](https://developer.hashicorp.com/terraform/language/resources)
 
-```hcl
+```terraform
 # Deve ser referenciado como "tipo.nome"
 resource "<tipo>" "<nome>" {
     ...
@@ -175,7 +175,7 @@ resource "<tipo>" "<nome>" {
     # recursos
     timeouts {
         create = "60m"
-        delete = "2h
+        delete = "2h"
     }
 
 }
@@ -185,7 +185,7 @@ resource "<tipo>" "<nome>" {
 
 Referência: [fontes de dados (en)](https://developer.hashicorp.com/terraform/language/data-sources)
 
-```hcl
+```terraform
 # Deve ser referenciado como "data.tipo.nome"
 data "<tipo>" "<nome>" {
     ...
@@ -196,7 +196,7 @@ data "<tipo>" "<nome>" {
 
 Referência: [variáveis (en)](https://developer.hashicorp.com/terraform/language/values/variables)
 
-```hcl
+```terraform
 # Deve ser referenciado como var.nome
 variable "<nome>" {
     type        = string|number|bool|list(...)|tuple([...])|set(...)|map(...)|object({...})
@@ -235,7 +235,7 @@ Definindo valores para variáveis no módulo raiz:
 
 Referência: [locais (en)](https://developer.hashicorp.com/terraform/language/values/locals)
 
-```hcl
+```terraform
 locals {
     # Deve ser referenciado como local.nome
     <nome> = <valor>
@@ -249,7 +249,7 @@ Podem existir múltiplos blocos `locals`
 
 Referência: [saídas (en)](https://developer.hashicorp.com/terraform/language/values/outputs)
 
-```hcl
+```terraform
 output "<nome>" {
     description = "..."
     value       = ...
@@ -265,7 +265,7 @@ Referência: [módulos (en)](https://developer.hashicorp.com/terraform/language/
 
 Utilizando um módulo:
 
-```hcl
+```terraform
 # Deve ser referenciado como module.nome
 module "<nome>" {
     source  = "..."
@@ -294,7 +294,7 @@ Disponível a partir do terraform v1.10
 * Argumento `ephemeral = true` em variáveis e saídas de módulos 
 * Recursos efêmeros (ephemeral)
 
-```hcl
+```terraform
 # Deve ser referenciado como ephemeral.nome
 ephemeral "<tipo>" "<nome>" {
     ...
@@ -311,7 +311,7 @@ Referência: [Importando (en)](https://developer.hashicorp.com/terraform/languag
 
 Disponível a partir do terraform v1.12
 
-```hcl
+```terraform
 # Deve estar em um arquivo com extensão .tfquery.hcl
 # Deve ser referenciado como list.tipo.nome
 list "<tipo>" "<nome>" {
@@ -322,7 +322,7 @@ list "<tipo>" "<nome>" {
 }
 ```
 
-```hcl
+```terraform
 import {
     id = "<id do recurso>"
     to = tipo.nome
@@ -339,7 +339,7 @@ Referência: [estado (en)](https://developer.hashicorp.com/terraform/language/st
 
 Disponível a partir do terraform v1.7
 
-```hcl
+```terraform
 # Declara um recurso como removido
 removed {
     from = tipo.nome
@@ -361,7 +361,7 @@ Referência: [ações (en)](https://developer.hashicorp.com/terraform/language/i
 
 Disponível a partir do terraform v1.14
 
-```hcl
+```terraform
 action "<tipo>" "<nome>" {
     config {
         ...
@@ -375,7 +375,7 @@ Referência: [valide sua configuração (en)](https://developer.hashicorp.com/te
 
 Disponível a partir do terraform v1.5
 
-```hcl
+```terraform
 check "<nome>" {
     data "<tipo>" "<nome>" {
         ...
@@ -394,7 +394,7 @@ Referência: [Testes (en)](https://developer.hashicorp.com/terraform/language/te
 
 Disponível a partir do terraform v1.6
 
-```hcl
+```terraform
 # Deve estar em um arquivo com extensão .tftest.hcl
 mock_provider "<nome>" {}
 
@@ -414,7 +414,7 @@ Referência: [expressões (en)](https://developer.hashicorp.com/terraform/langua
 
 [Strings e templates](https://developer.hashicorp.com/terraform/language/expressions/strings)
 
-```hcl
+```terraform
 # String
 "Olá"
 
@@ -449,13 +449,13 @@ EOT
 
 [Expressão condicional](https://developer.hashicorp.com/terraform/language/expressions/conditionals)
 
-```hcl
+```terraform
 <condição> ? <valor se verdadeiro> : <valor se falso>
 ```
 
 [Expressão for](https://developer.hashicorp.com/terraform/language/expressions/for)
 
-```hcl
+```terraform
 # Criando uma tupla
 [for <variável> in <coleção> : <resultado>]
 
@@ -472,14 +472,14 @@ EOT
 
 [Expressões splat](https://developer.hashicorp.com/terraform/language/expressions/splat)
 
-```hcl
+```terraform
 # Equivalente a [for o in <coleção> : o.<atributo>]
 <coleção>[*].<atributo>
 ```
 
 [Blocos dinâmicos](https://developer.hashicorp.com/terraform/language/expressions/dynamic-blocks)
 
-```hcl
+```terraform
 resource "<tipo>" "<valor>" {
     dynamic "<bloco>" {
         for_each = <coleção>
@@ -494,7 +494,7 @@ resource "<tipo>" "<valor>" {
 
 Referência: [funções (en)](https://developer.hashicorp.com/terraform/language/functions)
 
-```hcl
+```terraform
 # Executando funções internas
 <nome>(<argumentos>...)
 
@@ -829,7 +829,7 @@ Uso: `terraform workspace <subcomando> [opções] [argumentos]`
 
 Referência: [O que é HCP Terraform? (en)](https://developer.hashicorp.com/terraform/cloud-docs)
 
-```hcl
+```terraform
 terraform {
     cloud {
         organization = "..."
@@ -846,7 +846,7 @@ terraform {
 
 Referência: [stacks (en)](https://developer.hashicorp.com/terraform/language/stacks)
 
-```hcl
+```terraform
 # Deve estar em um arquivo com extensão .tfcomponent.hcl
 required_providers {
     <nome_local> = {
@@ -893,7 +893,7 @@ output "<nome>" {
 }
 ```
 
-```hcl
+```terraform
 # Deve estar em um arquivo com extensão .tfdeploy.hcl
 # Deve ser referenciado como store.varset.nome
 store "varset" "<nome>" {
